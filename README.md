@@ -1,17 +1,5 @@
 # Spring Boot JWT
 
-![](https://img.shields.io/badge/build-success-brightgreen.svg)
-
-# Stack
-
-![](https://img.shields.io/badge/java_8-✓-blue.svg)
-![](https://img.shields.io/badge/spring_boot-✓-blue.svg)
-![](https://img.shields.io/badge/mysql-✓-blue.svg)
-![](https://img.shields.io/badge/jwt-✓-blue.svg)
-![](https://img.shields.io/badge/swagger_2-✓-blue.svg)
-
-You can find a related post for this repository [here](https://medium.com/@xoor/jwt-authentication-service-44658409e12c).
-
 ***
 
 <h3 align="center">Please help this repo with a :star: if you find it useful! :blush:</h3>
@@ -388,13 +376,6 @@ http.apply(new JwtTokenFilterConfigurer(jwtTokenProvider));
     ]
   }
   ``` 
-
-# Contribution
-
-- Report issues
-- Open pull request with improvements
-- Spread the word
-- Reach out to me directly at <mauriurraco@gmail.com>
 
 # Donate
 
