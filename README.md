@@ -2,64 +2,6 @@
 
 ***
 
-<h3 align="center">Please help this repo with a :star: if you find it useful! :blush:</h3>
-
-***
-
-# File structure
-
-```
-spring-boot-jwt/
- │
- ├── src/main/java/
- │   └── murraco
- │       ├── configuration
- │       │   └── SwaggerConfig.java
- │       │
- │       ├── controller
- │       │   └── UserController.java
- │       │
- │       ├── dto
- │       │   ├── UserDataDTO.java
- │       │   └── UserResponseDTO.java
- │       │
- │       ├── exception
- │       │   ├── CustomException.java
- │       │   └── GlobalExceptionController.java
- │       │
- │       ├── model
- │       │   ├── Role.java
- │       │   └── User.java
- │       │
- │       ├── repository
- │       │   └── UserRepository.java
- │       │
- │       ├── security
- │       │   ├── JwtTokenFilter.java
- │       │   ├── JwtTokenFilterConfigurer.java
- │       │   ├── JwtTokenProvider.java
- │       │   ├── MyUserDetails.java
- │       │   └── WebSecurityConfig.java
- │       │
- │       ├── service
- │       │   └── UserService.java
- │       │
- │       └── JwtAuthServiceApp.java
- │
- ├── src/main/resources/
- │   └── application.yml
- │
- ├── .gitignore
- ├── LICENSE
- ├── mvnw/mvnw.cmd
- ├── README.md
- └── pom.xml
-```
-
-# Introduction (https://jwt.io)
-
-Just to throw some background in, we have a wonderful introduction, courtesy of **jwt.io**! Let’s take a look:
-
 ## What is JSON Web Token?
 
 JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed. JWTs can be signed using a secret (with the HMAC algorithm) or a public/private key pair using RSA.
@@ -164,10 +106,6 @@ Whenever the user wants to access a protected route or resource, the user agent 
 This is a stateless authentication mechanism as the user state is never saved in server memory. The server's protected routes will check for a valid JWT in the Authorization header, and if it's present, the user will be allowed to access protected resources. As JWTs are self-contained, all the necessary information is there, reducing the need to query the database multiple times.
 
 This allows you to fully rely on data APIs that are stateless and even make requests to downstream services. It doesn't matter which domains are serving your APIs, so Cross-Origin Resource Sharing (CORS) won't be an issue as it doesn't use cookies.
-
-The following diagram shows this process:
-
-![](https://camo.githubusercontent.com/5871e9f0234542cd89bab9b9c100b20c9eb5b789/68747470733a2f2f63646e2e61757468302e636f6d2f636f6e74656e742f6a77742f6a77742d6469616772616d2e706e67) 
 
 # JWT Authentication Summary
 
@@ -376,9 +314,3 @@ http.apply(new JwtTokenFilterConfigurer(jwtTokenProvider));
     ]
   }
   ``` 
-
-# Donate
-
-`btc: 36V7HqqENSKn6iFCBuE4iCdtB29uGoCKzN`
-
-`eth: 0xB419E3E9fa2233383E0877d442e55C34B9C944dD`
